@@ -10,6 +10,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 
 import Image from "next/image";
+import NavItems from "./NavItems";
 
 const MobileNav = () => {
   return (
@@ -31,7 +32,8 @@ const MobileNav = () => {
             width={128}
             height={38}
           />
-          <Separator />
+          <Separator className="border border-gray-50" />
+          <NavItems />
         </SheetContent>
       </Sheet>
     </nav>

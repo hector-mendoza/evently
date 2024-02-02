@@ -1,5 +1,21 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="border-t">
+      <div>
+        <Link href="/">
+          <Image
+            src="/assets/images/logo.svg"
+            alt="Evently Logo"
+            width={128}
+            height={38}
+          />
+        </Link>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
